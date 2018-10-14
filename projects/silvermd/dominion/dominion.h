@@ -128,4 +128,11 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
 
+//linking new functions to header file so itll run in this crazy c/c++ jank. I want to use handPosition instead of handPos... ugh I hate hate c/c++... i wish this was a GUI version!
+int SmithyCard(struct gameState *state, int currentPlayer, int handPos);
+int AdventurerCard(struct gameState *state, int drawntreasure, int currentPlayer, int temphand[], int z);
+int Council_RoomCard(struct gameState *state, int currentPlayer, int handPos);
+int VillageCard(struct gameState *state, int currentPlayer, int handPos);
+int great_hallCard(struct gameState *state, int currentPlayer, int handPos);
+
 #endif
