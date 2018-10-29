@@ -1341,7 +1341,7 @@ int VillageCard(struct gameState *state, int currentPlayer, int handPos)
   drawCard(currentPlayer, state);
 			
       //+2 Actions
-      state->numActions = state->numActions + 10; //added 8 actions
+      state->numActions = state->numActions + 10; //added 8 actions as a bug
 			
       //discard played card from hand
       discardCard(handPos, currentPlayer, state, 0);

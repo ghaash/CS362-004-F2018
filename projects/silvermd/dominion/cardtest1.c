@@ -37,7 +37,7 @@ void SmithyCardTest()
 	//starting a new game
 	initializeGame(numberOfPlayers, k, seed, &gameTest);
 	gameTest.handCount[playerNumber] = handCount;
-	memcpy(gameTest.hand[playerNumber], customHand, sizeof(int) *handCount);
+	memcpy(gameTest.hand[playerNumber], customHand[handcount], sizeof(int) *handCount);
 	
 	//testing if smithy card is in hand
 	if (inHand == 1)
