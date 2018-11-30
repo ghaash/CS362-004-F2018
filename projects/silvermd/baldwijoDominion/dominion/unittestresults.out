@@ -1,0 +1,79 @@
+Result for running unit tests:
+unittest1.c
+testing is game over function
+checking game over win conditions.
+IT  WORK - Game is not over when 1 Province remaining.
+IT  WORK - Game is over when 0 Province remaining.
+Determine if game is over when 3 coin card stacks are empty; copper, silver, gold.
+IT  WORK - Game is over when 3 card piles are empty.
+File 'dominion.c'
+Lines executed:15.90% of 610
+Creating 'dominion.c.gcov'
+
+unittest2.c
+testing score for function
+Score for Player's Hand is 2
+IT WORK - score correctly totaled
+File 'dominion.c'
+Lines executed:16.56% of 610
+Creating 'dominion.c.gcov'
+
+unittest3.c
+testing draw card functiondraw a card from the remanding cards
+IT WORKS - card added to hand.
+IT WORKS - card removed from deck.
+File 'dominion.c'
+Lines executed:14.59% of 610
+Creating 'dominion.c.gcov'
+
+unittest4.c
+testing discard card function
+attempting to discard card
+IT WORKS - card added to played pile.
+IT DOESNT WORK - card NOT added to discard pile.
+Copper, Silver, Smithy, Gold, 
+IT WORKS - card discarded
+File 'dominion.c'
+Lines executed:16.39% of 610
+Creating 'dominion.c.gcov'
+
+cardtest1.c
+testing the smithy card function
+IT DOESNT WORK - smithy card is not in the player's hand
+Use smithy card
+IT DOESNT WORK - player # 1 does not have a smithy
+IT WORKS - smithy card was discarded
+File 'dominion.c'
+Lines executed:19.34% of 610
+Creating 'dominion.c.gcov'
+
+cardtest2.c
+testing adventurer card function
+test with one adventurer card with player 1 and handcount 5 as per the rules of adventurer card
+IT DOESNT WORK - Adventurer card is NOT in player's hand
+use adventurer
+IT DOESN'T WORK - didnt shuffle 0
+IT DOESN'T WORK - player # 1 didnt get right cards.
+File 'dominion.c'
+Lines executed:7.38% of 610
+Creating 'dominion.c.gcov'
+
+cardtest3.c
+testing village card function
+IT DOESNT WORK - Village card is NOT in hand
+use village card
+IT WORKS - player # 0 got a card.
+IT DOESNT WORK - didnt gain 10 actions with player # 0.
+File 'dominion.c'
+Lines executed:19.34% of 610
+Creating 'dominion.c.gcov'
+
+cardtest4.c
+testing great hall card
+IT DOESNT WORK - number of cards in hand is wrong
+IT DOEST WORK - number of actions is wrong
+File 'dominion.c'
+Lines executed:14.59% of 610
+Creating 'dominion.c.gcov'
+
+randomtestadventurer.c
